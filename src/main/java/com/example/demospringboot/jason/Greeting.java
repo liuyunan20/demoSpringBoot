@@ -3,6 +3,8 @@ package com.example.demospringboot.jason;
 public class Greeting {
     private final String message;
 
+    public Greeting() {this.message = null;}
+
     public Greeting(String message) {
         this.message = message;
     }
