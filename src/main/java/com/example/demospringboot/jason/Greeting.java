@@ -1,7 +1,10 @@
 package com.example.demospringboot.jason;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Greeting {
-    private final String message;
+    private String message;
 
     public Greeting() {this.message = null;}
 
@@ -11,6 +14,10 @@ public class Greeting {
 
     public String getMessage() {
         return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 
     @Override

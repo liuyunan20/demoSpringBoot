@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class HelloRestControllerFunctionalTest {
 
     @Autowired
-    private  TestRestTemplate template;
+    private TestRestTemplate template;
     @Test
     public void greetWithName() {
         Greeting response = template.getForObject("/rest?name=Dolly", Greeting.class);
